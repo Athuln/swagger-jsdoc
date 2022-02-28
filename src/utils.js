@@ -38,7 +38,7 @@ function extractYamlFromJsDoc(jsDocComment) {
   const yamlParts = [];
 
   for (const tag of jsDocComment.tags) {
-    if (tag.title === 'swagger' || tag.title === 'openapi') {
+    if (tag.title === 'appblox' || tag.title === 'openapi') {
       yamlParts.push(tag.description);
     }
   }
